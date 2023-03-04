@@ -10,7 +10,7 @@ Criando projeto
 
 ```cargo new hello_world --bin```
 
-Compilando
+Compilando e baixando crates
 
 ```cargo build```
 
@@ -26,6 +26,11 @@ Verificação
 
 ```cargo build --release```
 
+### Atualizando crates
+
+```cargo update```
+
+
 ## rustc
 
 Compilando
@@ -39,6 +44,6 @@ Executando
 
 ## Onde parei
 
-2 - Jogo de adivinhação - Gerando um número secreto
+2 - Gerando um Número Aleatório
 
-[link](https://rust-br.github.io/rust-book-pt-br/ch02-00-guessing-game-tutorial.html#gerando-um-n%C3%BAmero-secreto)
+[link](https://rust-br.github.io/rust-book-pt-br/ch02-00-guessing-game-tutorial.html#gerando-um-n%C3%BAmero-aleat%C3%B3rio)
