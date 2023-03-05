@@ -12,7 +12,7 @@ fn main() {
     loop {
         println!("Digite seu palpite: ");
 
-        let mut palpite = String::new();
+        let mut palpite: String = String::new();
         //cria uma var mútavel atualmente vinculada a uma nova 
         // instância vazia de uma String 
 
@@ -20,8 +20,10 @@ fn main() {
         io::stdin().read_line(&mut palpite)
             .expect("Falha ao ler entrada!");
 
-        let palpite: u32 = palpite.trim().parse()
-            .expect("Por favor, digite um número!");
+        let palpite: u32 = match palpite.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         match palpite.cmp(&numero_secreto) {
             Ordering::Less => println!("Muito baixo!"),
@@ -32,6 +34,6 @@ fn main() {
             }   
         }
         println!("Você disse: {}", palpite);
-        println!("O número secreto é: {}", numero_secreto);
+
     }
 }

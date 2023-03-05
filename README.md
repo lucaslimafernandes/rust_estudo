@@ -30,6 +30,10 @@ Verificação
 
 ```cargo update```
 
+### Gerando documentação 
+
+```cargo doc --open```
+
 
 ## rustc
 
@@ -44,6 +48,6 @@ Executando
 
 ## Onde parei
 
-2 - Gerando um Número Aleatório
+3 - Tipos compostos
 
-[link](https://rust-br.github.io/rust-book-pt-br/ch02-00-guessing-game-tutorial.html#gerando-um-n%C3%BAmero-aleat%C3%B3rio)
+[link](https://rust-br.github.io/rust-book-pt-br/ch03-02-data-types.html#tipos-compostos)
